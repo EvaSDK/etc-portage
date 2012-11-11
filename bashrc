@@ -5,7 +5,7 @@
 _run_hooks() {
 	local hook basedir hook
 	phase="$1"
-	basedir="$(dirname $0)/hooks"
+	basedir="/etc/portage/hooks"
 
 	einfo "Running ${phase} hooks"
 
@@ -13,14 +13,14 @@ _run_hooks() {
 		for hook in ${basedir}/${phase}.d/* ; do
 			if [[ -x ${hook} ]]; then
 				einfo "  ${phase} hook: $(basename ${hook})"
-				${hook} $@ || exit 1
+				${hook} $@ || return 1
 			fi
 		done
 	else
 		:
 	fi
 
-	exit 0
+	return 0
 }
 
 post_src_unpack() {
