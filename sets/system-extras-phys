@@ -1,0 +1,10 @@
+sys-apps/memtest86+
+sys-apps/microcode-ctl
+sys-apps/smartmontools
+sys-apps/usbutils
+sys-boot/grub
+sys-boot/os-prober
+sys-kernel/gentoo-sources
+sys-kernel/linux-firmware
+sys-power/acpid
+sys-power/cpufrequtils
