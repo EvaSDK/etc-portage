@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [[ ! -e ${S}/gtk-doc.make ]]; then
+	exit 0
+fi
+
+checksum=$(md5sum "${S}/gtk-doc.make" | cut -f1 -d' ')
+tempfile=$(tempfile)
+
+cat >> $tempfile <<EOF
+4bef768c66cdb88a40b65a66113722ca
+EOF
+
+if grep -q "$checksum" $tempfile; then
+	eerror "Bad gtk-doc rules detected"
+
+#	if hasq ${FEATURES} stricter; then
+#		die "Bad gtk-doc rules detected"
+#	fi
+fi

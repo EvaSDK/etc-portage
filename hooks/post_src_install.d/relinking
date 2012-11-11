@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# This test is currently broken, do not use.
+if grep -q 'warning: relinking' ${TMPDIR}/build.log; then
+	ewarn
+	ewarn "Relinking:"
+	grep --color 'warning: relinking' ${TMPDIR}/build.log
+fi

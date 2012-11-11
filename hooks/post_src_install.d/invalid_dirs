@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if find "${D}/var/lib/run" >/dev/null 2>&1; then
+	eerror
+	errror "Invalid directory found /var/lib/run."
+	eerror "Please pass --localstatedir=/var in src_configure."
+fi

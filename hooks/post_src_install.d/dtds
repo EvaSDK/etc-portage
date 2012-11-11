@@ -1,0 +1,5 @@
+#!/bin/bash
+
+if [[ $(find "${D}" -name "*.dtd" | wc -l) -gt 0 ]]; then
+	ewarn "${PN} is installing dtd files."
+fi

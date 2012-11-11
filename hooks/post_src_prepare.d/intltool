@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ ! -e "${S}/po/Makefile.in.in" ]; then
+	exit 0
+fi
+
+checksum=$(md5sum "${S}/po/Makefile.in.in" | cut -f1 -d' ')
+
+if [ "$checksum" = "26d0fa167a5a49e7f2b57b99d08c6586" \
+	-o "$checksum" = "f81285d13b63167be6981aad0e1a2038" \
+	-o "$checksum" = "955fb57559c7d112f749e185fc34e07f" ]; then
+	eerror "Bad intltool rules detected"
+	#die "Bad intltool rules detected"
+fi

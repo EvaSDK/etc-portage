@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for file in $(find ${D} -type f -name "*.so")
+do
+	if readelf -d $file | egrep "gtk-.*2"; then
+
+		if readelf -d $file |egrep "gtk-3"; then
+			eqawarn "${PN} is installing files linking to both gtk+:2 and gtk+:3"
+		fi
+	fi
+done

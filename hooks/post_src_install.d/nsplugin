@@ -1,0 +1,11 @@
+#!/bin/bash
+
+f=$(ls -1 "${D}"/usr/lib*/mozilla/plugins/* 2>/dev/null)
+
+if [[ -n $f ]]; then
+	eqawarn "${BAD}QA Notice: the following files are not installed"
+	eqawarn "at the proper location:"
+	for i in $f; do
+		eqawarn "  /${i##${D}}"
+	done
+fi

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if [[ ! -d ${S}/po ]]; then
+	exit 0
+fi
+
+if [[ -d ${D}/usr/share/locale/ ]]; then
+	loc=$(find ${D}/usr/share/locale/ -type f -iname "${PN#lib}*.mo" | wc -l)
+	
+	if [[ $loc -eq 0 ]]; then
+		eerror "QA Error:"
+		eerror
+		eerror "in ${D}/usr/share/locale"
+		eerror "No locales ($loc) installed, you might be hitting bug #264114."
+	fi
+else
+	einfo "No installed locales"
+fi
+
+if [[ -n $LINGUAS ]]; then
+	max_loc=$(echo $LINGUAS | tr -s ' ' '\n' | wc -l)
+	
+	if [[ $loc -gt $max_loc ]]; then
+		eerror
+		eerror "Too much locales ($loc) wrt to user settings ($max_loc)."
+	fi
+else
+	einfo "Installing all locales"
+fi

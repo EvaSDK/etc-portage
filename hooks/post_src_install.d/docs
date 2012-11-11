@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docsdirs=$(find ${D}/usr/share/doc/ -maxdepth 1 -mindepth 1 -type d -iname "${PN}*" 2>/dev/null | wc -l)
+
+if [[ $docsdirs -gt 1 ]]; then
+	ewarn "QA Notice:"
+	ewarn
+	ewarn "Multiple ($docsdirs) documentation directories being installed"
+	ewarn "Fill a bug report and make it depend on bug #241568"
+fi

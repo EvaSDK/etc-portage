@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if grep -q 'missing --run automake' ${TMPDIR}/build.log; then
+	eerror
+	eerror "Maintainer mode rebuild detected"
+fi
