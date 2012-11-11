@@ -1,0 +1,6 @@
+dev-tex/texmfind
+dev-texlive/texlive-bibtexextra
+dev-texlive/texlive-latexextra
+media-gfx/simple-scan
+net-print/hplip
+virtual/latex-base

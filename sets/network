@@ -1,0 +1,8 @@
+net-analyzer/iftop
+net-analyzer/nload
+net-fs/nfs-utils
+net-fs/nfs4-acl-tools
+net-misc/wakeonlan
+sys-apps/ethtool
+sys-auth/nss-mdns
+sys-auth/nss-myhostname
