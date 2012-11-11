@@ -1,0 +1,5 @@
+# Needed for gst-plugins-ffmpeg
+dev-lang/yasm
+media-plugins/gst-plugins-meta
+net-misc/rygel
+net-p2p/transmission
