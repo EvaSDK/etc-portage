@@ -33,6 +33,13 @@ post_src_prepare() {
 	_run_hooks post_src_prepare
 }
 
+pre_src_configure() {
+	einfo "Calling pre_src_configure"
+	if grep -q "silent-rules" ${ECONF_SOURCE:-.}/configure ; then
+		EXTRA_ECONF="${EXTRA_ECONF} --enable-silent-rules"
+	fi
+}
+
 post_src_compile() {
 	_run_hooks post_src_compile
 }
