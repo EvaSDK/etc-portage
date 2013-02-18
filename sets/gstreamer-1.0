@@ -4,6 +4,7 @@ media-libs/gst-plugins-base:1.0
 media-libs/gst-plugins-good:1.0
 media-libs/gst-plugins-ugly:1.0
 media-plugins/gst-plugins-a52dec:1.0
+media-plugins/gst-plugins-amr:1.0
 media-plugins/gst-plugins-assrender:1.0
 media-plugins/gst-plugins-cdio:1.0
 media-plugins/gst-plugins-cdparanoia:1.0
@@ -14,10 +15,10 @@ media-plugins/gst-plugins-dvdread:1.0
 media-plugins/gst-plugins-faac:1.0
 media-plugins/gst-plugins-faad:1.0
 media-plugins/gst-plugins-flac:1.0
+media-plugins/gst-plugins-gdkpixbuf:1.0
 media-plugins/gst-plugins-jack:1.0
 media-plugins/gst-plugins-jpeg:1.0
 media-plugins/gst-plugins-lame:1.0
-media-plugins/gst-plugins-libav:1.0
 media-plugins/gst-plugins-libav:1.0
 media-plugins/gst-plugins-libmms:1.0
 media-plugins/gst-plugins-libnice:1.0

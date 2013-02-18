@@ -7,6 +7,7 @@ media-libs/gst-plugins-ugly:0.10
 media-libs/gst-rtsp-server:0.10
 media-plugins/gst-plugins-a52dec:0.10
 media-plugins/gst-plugins-alsa:0.10
+media-plugins/gst-plugins-amr:0.10
 media-plugins/gst-plugins-annodex:0.10
 media-plugins/gst-plugins-assrender:0.10
 media-plugins/gst-plugins-cdio:0.10
@@ -20,6 +21,7 @@ media-plugins/gst-plugins-faad:0.10
 media-plugins/gst-plugins-ffmpeg:0.10
 media-plugins/gst-plugins-flac:0.10
 media-plugins/gst-plugins-gconf:0.10
+media-plugins/gst-plugins-gdkpixbuf:0.10
 media-plugins/gst-plugins-gio:0.10
 media-plugins/gst-plugins-gl:0
 media-plugins/gst-plugins-gnomevfs:0.10
