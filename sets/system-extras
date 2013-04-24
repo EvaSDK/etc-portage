@@ -2,6 +2,7 @@ app-admin/logrotate
 app-admin/sudo
 app-admin/superadduser
 app-admin/syslog-ng
+app-arch/lbzip2
 app-editors/vim
 app-misc/screen
 net-misc/ntp
