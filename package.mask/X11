@@ -1,0 +1,2 @@
+# Breaks touchpad sensitivity
+>=x11-drivers/xf86-input-synaptics-1.7
