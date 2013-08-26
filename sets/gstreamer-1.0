@@ -31,6 +31,8 @@ media-plugins/gst-plugins-modplug:1.0
 media-plugins/gst-plugins-mpeg2dec:1.0
 media-plugins/gst-plugins-mpeg2enc:1.0
 media-plugins/gst-plugins-mplex:1.0
+media-plugins/gst-plugins-neon:1.0
+media-plugins/gst-plugins-ofa:1.0
 media-plugins/gst-plugins-opus:1.0
 media-plugins/gst-plugins-oss:1.0
 media-plugins/gst-plugins-pulse:1.0
