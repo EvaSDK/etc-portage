@@ -1,4 +1,4 @@
-media-libs/gst-plugins-ugly:1.0:1.0
+media-libs/gst-plugins-ugly:1.0
 media-plugins/gst-plugins-a52dec:1.0
 media-plugins/gst-plugins-amr:1.0
 media-plugins/gst-plugins-cdio:1.0
