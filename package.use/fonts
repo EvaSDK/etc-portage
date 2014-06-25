@@ -1,0 +1,15 @@
+# X support for font engine
+media-libs/freetype X
+
+# fonts
+media-fonts/arphicfonts X
+media-fonts/cantarell X
+media-fonts/corefonts X
+media-fonts/dejavu X
+media-fonts/encodings X
+media-fonts/font-util X
+media-fonts/kochi-substitute X
+media-fonts/liberation-fonts X
+media-fonts/ubuntu-font-family X
+media-fonts/unifont X
+media-fonts/urw-fonts X
