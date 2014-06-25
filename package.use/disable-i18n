@@ -1,0 +1,3 @@
+# i18n man pages are worthless 
+sys-apps/man       -nls
+sys-apps/man-pages -nls
