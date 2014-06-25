@@ -1,0 +1,42 @@
+# Gnome base
+gnome-base/gnome
+gnome-extra/gnome-shell-extensions
+gnome-extra/gnome-user-share
+gnome-extra/gnome-web-photo
+media-gfx/gnome-raw-thumbnailer
+media-sound/rhythmbox
+sys-apps/gnome-disk-utility
+sys-block/gparted
+# Dictionaries
+app-dicts/myspell-en
+app-dicts/myspell-fr
+# ISO support for file-roller
+virtual/cdrtools
+# Photo editing
+media-gfx/darktable
+sys-fs/fuse-exfat
+# Gnome office
+app-office/gnumeric
+app-office/abiword
+app-office/gnucash
+# Gnome extras
+app-crypt/seahorse-sharing
+app-editors/gedit-plugins
+app-misc/bijiben
+app-misc/gnote
+gnome-extra/gnome-activity-journal
+gnome-extra/gnome-boxes
+gnome-extra/gnome-clocks
+gnome-extra/gnome-packagekit
+gnome-extra/gnome-weather
+media-gfx/gnome-photos
+media-sound/gnome-music
+sci-geosciences/gnome-maps
+# Other
+gnome-extra/eiciel
+net-misc/rygel
+net-p2p/transmission-remote-gtk
+x11-misc/redshift
+# For legacy media players on the web
+www-plugins/adobe-flash
+www-client/firefox
