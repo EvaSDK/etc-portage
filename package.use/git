@@ -1,0 +1,2 @@
+# perl: needed for rebase and a few others
+dev-vcs/git perl
