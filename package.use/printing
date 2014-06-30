@@ -1,0 +1,12 @@
+# cxx: required by cups-filter
+app-text/poppler cxx
+
+# scanner: required by ocrfeeder
+dev-python/pillow scanner
+
+# hpijs: for scanner
+# scanner: for scanner
+net-print/hplip hpijs scanner
+
+# scanner: required by simple-scan
+x11-misc/colord scanner
