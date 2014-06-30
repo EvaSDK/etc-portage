@@ -1,0 +1,2 @@
+# Rarely released, using live ebuild per upstream recommandation
+app-portage/euscan ** ~amd64
