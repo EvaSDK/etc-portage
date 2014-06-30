@@ -1,0 +1,4 @@
+# Minimal required support, some package may fail without it and it is
+# currently not required to control this via package dependency.
+sys-devel/gcc cxx -nocxx
+sys-devel/binutils cxx
