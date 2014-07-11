@@ -1,0 +1,139 @@
+# python: support for python plugins
+app-editors/gedit python
+# terminal: support for integrated terminal via vte
+app-editors/gedit-plugins python terminal
+
+# ofx: support for exchange format
+app-office/gnucash ofx
+
+# cairo: required via evince
+app-text/poppler cairo
+
+# sqlite: required by firefox in python2, and ipython for all slots
+dev-lang/python sqlite
+
+# gnome: required by gnome-documents
+dev-libs/libgdata gnome
+
+# python: required for plugin sypport in rhythmbox and others
+dev-libs/libpeas python
+
+# python: required by system-config-printer and itstools
+dev-libs/libxml2 python 
+
+# cdda: required by sound-juicer
+# gtk: required by nautilus (recent files support)
+# udisks: required by systemd
+gnome-base/gvfs cdda gtk udisks
+
+# vala: required by folks
+gnome-extra/evolution-data-server vala
+
+# playlist: required by totem
+media-libs/grilo playlist
+
+# apng: required by firefox
+media-libs/libpng apng
+
+# X: required by totem and cheese
+media-libs/gst-plugins-base X
+
+# python: required by dbus
+media-sound/rhythmbox cdr clutter daap musicbrainz python
+
+# nsplugin: plugin for web browsers
+# python: plugins
+media-video/totem nsplugin python
+
+# autoipd: required by networkmanager
+# gtk3: required by vinagre
+# mdnsreponder-compat: required by libgphoto2[zeroconf] via darktable
+net-dns/avahi autoipd gtk3 mdnsresponder-compat
+
+# X: required by gnome-session
+sys-apps/dbus X
+# X: at-least-one-of X, aqua, wayland
+x11-libs/gtk+ X
+
+# gtk: pull graphical dialog when changing locale
+x11-misc/xdg-user-dirs gtk
+
+# gudev: required by gvfs, networkmanager, gnome-boxes, colord, etc
+sys-apps/systemd gudev
+virtual/udev gudev
+
+# X: required by webkit-gtk, gtk, etc
+# opengl: required by webkit-gtk
+x11-libs/cairo X opengl
+
+# X: required by metacity/mutter, vino and firefox
+x11-libs/pango X
+
+# FIXME: https://bugs.gentoo.org/show_bug.cgi?id=515198
+# ffmpeg: needed by firefox
+media-plugins/gst-plugins-meta ffmpeg
+
+# geoclue: location awareness
+# gtk: integration to the desktop
+x11-misc/redshift geoclue gtk
+
+# geo: location awareness
+media-gfx/darktable geo
+
+# gnome-control-center[cups]
+#net-fs/cifs-utils -acl upcall
+#net-fs/samba winbind
+# samba
+#sys-libs/talloc python
+
+# Meta ebuilds
+media-plugins/gst-plugins-meta X cdda dts http ogg lame mpeg taglib xv xvid
+net-im/telepathy-connection-managers icq irc msn sip yahoo
+# required by USE=msn in telepathy-connection-managers but we do not want
+# anything else than libpurple
+net-im/pidgin -eds -gstreamer -gtk -ncurses -spell -xscreensaver
+
+# map: enable contact's map
+mail-client/evolution map
+
+# yahoo-geo: default recommended provider
+# hostip: alternative provider
+# gtk: enable gtk based utility
+app-misc/geoclue -geonames hostip -manual -nominatim gtk yahoo-geo
+
+# gtk: required by gnome-raw-thumbnailer
+media-libs/libopenraw gtk
+
+# gtk: enable gtk utilities
+# pdf: parse pdfs
+# playlist: enable playlist parsing
+# rss: enable RSS miner
+app-misc/tracker gtk pdf playlist rss
+
+# zeitgeist
+gnome-extra/zeitgeist downloads-monitor extensions plugins telepathy
+gnome-extra/zeitgeist-datasources firefox telepathy vim
+
+# gptfdisk: parted is good enough for me
+sys-fs/udisks -gptfdisk
+
+# pull support for regularly used FS
+sys-block/gparted btrfs mdadm fat ntfs reiserfs xfs
+
+# flickr: enable support for flickr, required by gnome-online-miners somehow
+media-plugins/grilo-plugins flickr
+
+# gtk: required by totem
+media-libs/clutter gtk
+
+# flickr: enable flickr support
+# map: enable map plugin
+# python: enable python based plugins
+# python_single_target_python3_3: PMS has no way to default enable this yet
+media-gfx/eog-plugins flickr map python python_single_target_python3_3
+
+# gtk: enable gtk GUI
+app-dicts/verbiste gtk
+
+# vala: required by folks[socialweb]
+net-libs/libsocialweb vala
