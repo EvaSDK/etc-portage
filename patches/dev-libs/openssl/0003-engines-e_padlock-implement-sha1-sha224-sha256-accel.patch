@@ -1,4 +1,4 @@
-From 77b32d0906eaac4d9adf3e6b7c3b52d927e10b41 Mon Sep 17 00:00:00 2001
+From 1bf3b4a6d1c29d130579b7ea56398cbefda427a5 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Timo=20Ter=C3=A4s?= <timo.teras@iki.fi>
 Date: Wed, 28 Jul 2010 08:37:58 +0300
 Subject: [PATCH 3/4] engines/e_padlock: implement sha1/sha224/sha256
@@ -29,7 +29,7 @@ hmac(sha1)    8424.70k    31475.11k   104036.10k   245559.30k   406667.26k
  1 file changed, 613 insertions(+), 47 deletions(-)
 
 diff --git a/engines/e_padlock.c b/engines/e_padlock.c
-index 6ab42d2..e107d3c 100644
+index 9a3bd5c..7d6b557 100644
 --- a/engines/e_padlock.c
 +++ b/engines/e_padlock.c
 @@ -3,6 +3,9 @@
@@ -218,7 +218,7 @@ index 6ab42d2..e107d3c 100644
  }
  
  /* Force key reload from memory to the CPU microcode.
-@@ -1273,6 +1295,496 @@ padlock_aes_cipher(EVP_CIPHER_CTX *ctx, unsigned char *out_arg,
+@@ -1275,6 +1297,496 @@ padlock_aes_cipher(EVP_CIPHER_CTX *ctx, unsigned char *out_arg,
  
  #endif /* OPENSSL_NO_AES */
  
@@ -715,7 +715,7 @@ index 6ab42d2..e107d3c 100644
  /* ===== Random Number Generator ===== */
  /*
   * This code is not engaged. The reason is that it does not comply
-@@ -1329,6 +1841,60 @@ static RAND_METHOD padlock_rand = {
+@@ -1331,6 +1843,60 @@ static RAND_METHOD padlock_rand = {
  	padlock_rand_status,	/* rand status */
  };
  
@@ -777,5 +777,5 @@ index 6ab42d2..e107d3c 100644
  #ifndef OPENSSL_NO_DYNAMIC_ENGINE
  OPENSSL_EXPORT
 -- 
-1.7.11.3
+2.2.1
 

@@ -1,4 +1,4 @@
-From ca3e27975dce1d969eeb41f5d882b34cb3eb1efb Mon Sep 17 00:00:00 2001
+From 6bccda77ace3646064ccc9945176fddf80bc25db Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Timo=20Ter=C3=A4s?= <timo.teras@iki.fi>
 Date: Fri, 4 Jun 2010 09:48:39 +0300
 Subject: [PATCH 1/4] crypto/hmac: support EVP_MD_CTX_FLAG_ONESHOT and set it
@@ -93,5 +93,5 @@ index ba27cbf..cffa0ba 100644
  	EVP_MD_CTX_set_flags(&ctx->md_ctx, flags);
  	}
 -- 
-1.7.11.3
+2.2.1
 

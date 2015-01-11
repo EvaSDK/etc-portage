@@ -1,4 +1,4 @@
-From 6e182155643a6aeb07cbba1e7f79ac1adfcddad2 Mon Sep 17 00:00:00 2001
+From 90f9f0051cefcc8c06e6235309c48585a5bf83a6 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?Timo=20Ter=C3=A4s?= <timo.teras@iki.fi>
 Date: Wed, 28 Jul 2010 08:29:09 +0300
 Subject: [PATCH 2/4] engines/e_padlock: backport cvs head changes
@@ -10,11 +10,11 @@ Includes support for VIA Nano 64-bit mode.
 
 Signed-off-by: Timo Teräs <timo.teras@iki.fi>
 ---
- engines/e_padlock.c | 140 +++++++++++++++++++++++++++++++++++++++++++++-------
- 1 file changed, 122 insertions(+), 18 deletions(-)
+ engines/e_padlock.c | 144 ++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 124 insertions(+), 20 deletions(-)
 
 diff --git a/engines/e_padlock.c b/engines/e_padlock.c
-index 9f7a85a..6ab42d2 100644
+index 5d252f6..9a3bd5c 100644
 --- a/engines/e_padlock.c
 +++ b/engines/e_padlock.c
 @@ -101,7 +101,10 @@
@@ -37,11 +37,12 @@ index 9f7a85a..6ab42d2 100644
  /*
   * As for excessive "push %ebx"/"pop %ebx" found all over.
   * When generating position-independent code GCC won't let
-@@ -383,21 +387,6 @@ padlock_available(void)
+@@ -383,23 +387,6 @@ padlock_available(void)
  	return padlock_use_ace + padlock_use_rng;
  }
  
 -#ifndef OPENSSL_NO_AES
+-#ifndef AES_ASM
 -/* Our own htonl()/ntohl() */
 -static inline void
 -padlock_bswapl(AES_KEY *ks)
@@ -55,11 +56,12 @@ index 9f7a85a..6ab42d2 100644
 -	}
 -}
 -#endif
+-#endif
 -
  /* Force key reload from memory to the CPU microcode.
     Loading EFLAGS from the stack clears EFLAGS[30] 
     which does the trick. */
-@@ -455,12 +444,127 @@ static inline void *name(size_t cnt,		\
+@@ -457,12 +444,129 @@ static inline void *name(size_t cnt,		\
  		: "edx", "cc", "memory");	\
  	return iv;				\
  }
@@ -172,6 +174,7 @@ index 9f7a85a..6ab42d2 100644
  PADLOCK_XCRYPT_ASM(padlock_xcrypt_cfb, ".byte 0xf3,0x0f,0xa7,0xe0")	/* rep xcryptcfb */
  PADLOCK_XCRYPT_ASM(padlock_xcrypt_ofb, ".byte 0xf3,0x0f,0xa7,0xe8")	/* rep xcryptofb */
 +
++#ifndef AES_ASM
 +/* Our own htonl()/ntohl() */
 +static inline void
 +padlock_bswapl(AES_KEY *ks)
@@ -184,10 +187,11 @@ index 9f7a85a..6ab42d2 100644
 +		key++;
 +	}
 +}
++#endif
  #endif
  
  /* The RNG call itself */
-@@ -491,8 +595,8 @@ padlock_xstore(void *addr, unsigned int edx_in)
+@@ -493,8 +597,8 @@ padlock_xstore(void *addr, unsigned int edx_in)
  static inline unsigned char *
  padlock_memcpy(void *dst,const void *src,size_t n)
  {
@@ -199,5 +203,5 @@ index 9f7a85a..6ab42d2 100644
  	n /= sizeof(*d);
  	do { *d++ = *s++; } while (--n);
 -- 
-1.7.11.3
+2.2.1
 
