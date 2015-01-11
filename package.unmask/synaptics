@@ -1,4 +1,0 @@
-# Chí-Thanh Christopher Nguyễn <chithanh@gentoo.org> (14 May 2014)
-# Depends on libevdev which still needs keywording, bug #487944
->=x11-drivers/xf86-input-evdev-2.8.99
->=x11-drivers/xf86-input-synaptics-1.7.99
