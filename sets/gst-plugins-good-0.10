@@ -15,6 +15,5 @@ media-plugins/gst-plugins-soup:0.10
 media-plugins/gst-plugins-speex:0.10
 media-plugins/gst-plugins-taglib:0.10
 media-plugins/gst-plugins-v4l2:0.10
-media-plugins/gst-plugins-vp8:0.10
 media-plugins/gst-plugins-wavpack:0.10
 media-plugins/gst-plugins-ximagesrc:0.10
