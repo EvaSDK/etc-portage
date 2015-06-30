@@ -100,11 +100,13 @@ app-misc/geoclue -geonames hostip -manual -nominatim gtk yahoo-geo
 # gtk: required by gnome-raw-thumbnailer
 media-libs/libopenraw gtk
 
+# gstreamer: use it as media extractor in place of ffmpeg/libav
 # gtk: enable gtk utilities
 # pdf: parse pdfs
 # playlist: enable playlist parsing
 # rss: enable RSS miner
-app-misc/tracker gtk pdf playlist rss
+# upower: enable power management support
+app-misc/tracker -ffmpeg gstreamer gtk pdf playlist rss upower
 
 # zeitgeist
 gnome-extra/zeitgeist downloads-monitor extensions plugins telepathy
