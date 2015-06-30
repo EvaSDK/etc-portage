@@ -134,6 +134,9 @@ media-gfx/eog-plugins flickr map python python_single_target_python3_3
 # gtk: enable gtk GUI
 app-dicts/verbiste gtk
 
+# gnome: required by gnucash
+x11-libs/goffice gnome
+
 # spice: required by gnome-boxes
 app-emulation/qemu spice
 
@@ -148,3 +151,10 @@ app-emulation/qemu -smartcard
 app-emulation/spice -smartcard
 gnome-extra/gnome-boxes -smartcard
 net-misc/spice-gtk -smartcard
+
+# modemmanager: required by gnome-control-center for network panel
+# ppp: required by USE=modemmanager
+net-misc/networkmanager modemmanager ppp
+
+# gtk: required by evolution-data-server and gnome-keyring
+app-crypt/gcr gtk
