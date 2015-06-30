@@ -102,11 +102,12 @@ media-libs/libopenraw gtk
 
 # gstreamer: use it as media extractor in place of ffmpeg/libav
 # gtk: enable gtk utilities
+# iso: required by gnome-boxes
 # pdf: parse pdfs
 # playlist: enable playlist parsing
 # rss: enable RSS miner
 # upower: enable power management support
-app-misc/tracker -ffmpeg gstreamer gtk pdf playlist rss upower
+app-misc/tracker -ffmpeg gstreamer gtk iso pdf playlist rss upower
 
 # zeitgeist
 gnome-extra/zeitgeist downloads-monitor extensions plugins telepathy
@@ -133,3 +134,17 @@ media-gfx/eog-plugins flickr map python python_single_target_python3_3
 # gtk: enable gtk GUI
 app-dicts/verbiste gtk
 
+# spice: required by gnome-boxes
+app-emulation/qemu spice
+
+# gstreamer: select pulseaudio backend for managing sound
+# gtk3: required by gnome-boxes
+net-misc/spice-gtk -gstreamer gtk3
+
+# smartcard: disabled because it breaks portage display (???)
+#            and cannot work given current qemu/spice-gtk
+#            conflict on dependencies
+app-emulation/qemu -smartcard
+app-emulation/spice -smartcard
+gnome-extra/gnome-boxes -smartcard
+net-misc/spice-gtk -smartcard
