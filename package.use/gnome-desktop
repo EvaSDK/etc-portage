@@ -80,12 +80,6 @@ x11-misc/redshift geoclue gtk
 # geo: location awareness
 media-gfx/darktable geo
 
-# gnome-control-center[cups]
-#net-fs/cifs-utils -acl upcall
-#net-fs/samba winbind
-# samba
-#sys-libs/talloc python
-
 # Meta ebuilds
 media-plugins/gst-plugins-meta X cdda dts http ogg lame mpeg taglib xv xvid
 net-im/telepathy-connection-managers icq irc msn sip yahoo
@@ -135,5 +129,3 @@ media-gfx/eog-plugins flickr map python python_single_target_python3_3
 # gtk: enable gtk GUI
 app-dicts/verbiste gtk
 
-# vala: required by folks[socialweb]
-net-libs/libsocialweb vala
