@@ -1,0 +1,3 @@
+# X: no need for xvim or anything like this
+# python: add support for python language
+app-editors/vim -X python
