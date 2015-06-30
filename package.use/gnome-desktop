@@ -22,9 +22,11 @@ dev-libs/libpeas python
 dev-libs/libxml2 python 
 
 # cdda: required by sound-juicer
+# fuse: add support for large SD cards via fuse-exfat
+# gphoto2: add support for importing files from cameras through libgphoto2
 # gtk: required by nautilus (recent files support)
 # udisks: required by systemd
-gnome-base/gvfs cdda gtk udisks
+gnome-base/gvfs cdda fuse gphoto2 gtk udisks
 
 # vala: required by folks
 gnome-extra/evolution-data-server vala
