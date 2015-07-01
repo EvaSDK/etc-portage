@@ -26,6 +26,7 @@ app-misc/bijiben
 app-misc/gnote
 gnome-extra/gnome-activity-journal
 gnome-extra/gnome-boxes
+gnome-extra/gnome-calendar
 gnome-extra/gnome-clocks
 gnome-extra/gnome-packagekit
 gnome-extra/gnome-weather
