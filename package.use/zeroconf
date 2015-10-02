@@ -1,0 +1,2 @@
+# zeroconf: needs avahi[mdnsresponder-compat]
+net-misc/ntp -zeroconf
