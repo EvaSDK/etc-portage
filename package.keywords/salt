@@ -1,0 +1,6 @@
+app-admin/salt ~amd64
+# required by >=salt-2015.8.0
+www-servers/tornado ~amd64
+# required by >=salt-2015.8.0dd
+# You should upgrade pyOpenSSL to at least 0.15.1 to enable the full use of X509 extensions
+=dev-python/pyopenssl-0.15.1 ~amd64
