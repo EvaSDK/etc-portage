@@ -1,8 +1,0 @@
-# python: required by orca
-app-accessibility/brltty python
-
-# python: required by orca
-app-accessibility/speech-dispatcher python
-
-# python: required by orca
-dev-libs/liblouis python
