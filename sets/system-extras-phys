@@ -1,3 +1,4 @@
+net-misc/ntp
 sys-apps/memtest86+
 sys-apps/microcode-ctl
 sys-apps/smartmontools
