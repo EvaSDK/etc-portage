@@ -5,7 +5,6 @@ app-admin/syslog-ng
 app-arch/lbzip2
 app-editors/vim
 app-misc/screen
-net-misc/ntp
 sys-apps/mlocate
 sys-process/htop
 sys-process/iotop
