@@ -5,6 +5,7 @@ media-libs/gstreamer:1.0
 @gst-plugins-good-1.0
 @gst-plugins-ugly-1.0
 media-libs/gst-rtsp-server:1.0
+media-libs/gstreamer-editing-services:1.0
 media-plugins/gst-plugins-libav:1.0
 media-plugins/gst-plugins-libnice:1.0
 media-plugins/gst-plugins-meta:1.0
