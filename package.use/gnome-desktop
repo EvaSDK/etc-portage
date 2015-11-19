@@ -54,6 +54,8 @@ net-dns/avahi autoipd gtk3 mdnsresponder-compat
 
 # X: required by gnome-session
 sys-apps/dbus X
+# X: required by gtk+[X]
+x11-libs/gdk-pixbuf
 # X: at-least-one-of X, aqua, wayland
 x11-libs/gtk+ X
 
