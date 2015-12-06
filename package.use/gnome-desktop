@@ -70,6 +70,9 @@ virtual/udev gudev
 # opengl: required by webkit-gtk
 x11-libs/cairo X opengl
 
+# X: must match cairo (header automagic)
+dev-cpp/cairomm X
+
 # X: required by metacity/mutter, vino and firefox
 x11-libs/pango X
 
@@ -125,7 +128,15 @@ sys-block/gparted btrfs mdadm fat ntfs reiserfs xfs
 media-plugins/grilo-plugins flickr
 
 # gtk: required by totem
-media-libs/clutter gtk
+# X: required by mutter
+media-libs/clutter X gtk
+
+# X: must match clutter (header automagic)
+# gtk: must match clutter (header automagic)
+media-libs/clutter-gtk X gtk
+
+# X: must match clutter (header automagic)
+media-libs/clutter-gst X
 
 # flickr: enable flickr support
 # map: enable map plugin
