@@ -127,6 +127,9 @@ sys-block/gparted btrfs mdadm fat ntfs reiserfs xfs
 # flickr: enable support for flickr, required by gnome-online-miners somehow
 media-plugins/grilo-plugins flickr
 
+# gles2: required by clutter[egl]
+media-libs/cogl gles2
+
 # egl: required by mutter[kms]
 # gtk: required by totem
 # X: required by mutter
