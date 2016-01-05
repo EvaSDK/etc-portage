@@ -27,11 +27,15 @@ app-misc/gnote
 gnome-extra/gnome-activity-journal
 gnome-extra/gnome-boxes
 gnome-extra/gnome-calendar
+gnome-extra/gnome-characters
 gnome-extra/gnome-clocks
-gnome-extra/gnome-packagekit
+gnome-extra/gnome-logs
+gnome-extra/gnome-software
 gnome-extra/gnome-weather
 media-gfx/gnome-photos
 media-sound/gnome-music
+media-sound/gnome-sound-recorder
+net-irc/polari
 sci-geosciences/gnome-maps
 # Other
 gnome-extra/eiciel
