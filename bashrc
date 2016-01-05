@@ -35,7 +35,7 @@ post_src_prepare() {
 
 pre_src_configure() {
 	einfo "Calling pre_src_configure"
-	if grep -q "silent-rules" ${ECONF_SOURCE:-.}/configure ; then
+	if [[ -f ${ECONF_SOURCE:-.}/configure ]] && grep -q "silent-rules" ${ECONF_SOURCE:-.}/configure ; then
 		EXTRA_ECONF="${EXTRA_ECONF} --enable-silent-rules"
 	fi
 }
