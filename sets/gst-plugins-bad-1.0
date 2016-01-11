@@ -10,7 +10,6 @@ media-plugins/gst-plugins-faad:1.0
 media-plugins/gst-plugins-hls:1.0
 media-plugins/gst-plugins-libde265:1.0
 media-plugins/gst-plugins-libmms:1.0
-media-plugins/gst-plugins-mimic:1.0
 media-plugins/gst-plugins-modplug:1.0
 media-plugins/gst-plugins-mpeg2enc:1.0
 media-plugins/gst-plugins-mplex:1.0
