@@ -4,7 +4,6 @@ sys-apps/smartmontools
 sys-apps/usbutils
 sys-boot/grub
 sys-boot/os-prober
-sys-kernel/gentoo-sources
-sys-kernel/linux-firmware
 sys-power/acpid
 sys-power/cpupower
+virtual/linux-sources
