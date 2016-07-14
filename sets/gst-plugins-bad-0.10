@@ -7,7 +7,6 @@ media-plugins/gst-plugins-faad:0.10
 media-plugins/gst-plugins-gsm:0.10
 media-plugins/gst-plugins-ladspa:0.10
 media-plugins/gst-plugins-libmms:0.10
-media-plugins/gst-plugins-mimic:0.10
 media-plugins/gst-plugins-modplug:0.10
 media-plugins/gst-plugins-mpeg2enc:0.10
 media-plugins/gst-plugins-mplex:0.10

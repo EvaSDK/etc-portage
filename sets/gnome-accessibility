@@ -1,12 +1,4 @@
 app-accessibility/accerciser
 app-accessibility/caribou
 app-accessibility/orca
-gnome-extra/at-spi:2
 gnome-extra/mousetweaks
-# Dying
-#app-accessibility/dasher
-#app-accessibility/gnome-mag
-#app-accessibility/gnome-speech
-#app-accessibility/gok
-# Dead
-#gnome-extra/at-spi:1

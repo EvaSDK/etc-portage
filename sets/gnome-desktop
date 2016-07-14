@@ -32,6 +32,8 @@ gnome-extra/gnome-clocks
 gnome-extra/gnome-logs
 gnome-extra/gnome-software
 gnome-extra/gnome-weather
+gnome-extra/seahorse-nautilus
+media-gfx/eog-plugins
 media-gfx/gnome-photos
 media-sound/gnome-music
 media-sound/gnome-sound-recorder
