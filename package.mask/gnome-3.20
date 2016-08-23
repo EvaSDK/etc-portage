@@ -26,11 +26,13 @@
 >=dev-libs/gdl-3.20
 >=dev-libs/gobject-introspection-1.48
 >=dev-libs/gobject-introspection-common-1.48
+>=dev-libs/libgames-support-1
 >=dev-libs/libgweather-3.20
 >=dev-libs/libical-2
 >=dev-libs/libpeas-1.18
 >=dev-libs/libsigc++-2.8
 >=dev-libs/vala-common-0.32
+>=dev-util/devhelp-3.20
 >=dev-python/pyatspi-2.20
 >=dev-python/pygobject-3.20
 >=dev-vcs/gitg-3.20
@@ -80,6 +82,7 @@
 >=gnome-extra/gnome-tweak-tool-3.20
 >=gnome-extra/gnome-user-docs-3.20
 >=gnome-extra/gnome-weather-3.20
+>=gnome-extra/gucharmap-9
 >=gnome-extra/nautilus-tracker-tags-1.8
 >=gnome-extra/sushi-3.20
 >=gnome-extra/yelp-3.20
@@ -90,9 +93,11 @@
 >=media-gfx/gnome-font-viewer-3.20
 >=media-gfx/gnome-photos-3.20
 >=media-gfx/gnome-screenshot-3.20
+>=media-gfx/simple-scan-3.20
 >=media-libs/clutter-1.26
 >=media-libs/clutter-gtk-1.8
->=media-libs/grilo-0.3
+# >=media-libs/grilo-0.3:0.3
+# >=media-plugins/grilo-plugins-0.3:0.3
 >=media-sound/gnome-music-3.20
 >=media-sound/gnome-sound-recorder-3.20
 >=media-sound/pulseaudio-9
@@ -104,7 +109,7 @@
 >=net-libs/gnome-online-accounts-3.20
 >=net-libs/libsoup-2.54
 >=net-libs/webkit-gtk-2.12
->=net-libs/webkit-gtk-2.4.11-r1
+>=net-libs/webkit-gtk-2.4.11-r1:3
 >=net-misc/gnome-online-miners-3.20
 >=net-misc/rygel-0.30
 >=net-misc/vinagre-3.20
