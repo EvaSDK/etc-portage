@@ -1,11 +1,1 @@
 app-admin/salt ~amd64
-# required by >=salt-2015.8.2[vim-syntax]
-app-vim/salt-vim ~amd64
-# required by >=salt-2015.8.0
-www-servers/tornado ~amd64
-# required by >=salt-2015.8.0
-# You should upgrade pyOpenSSL to at least 0.15.1 to enable the full use of X509 extensions
-=dev-python/pyopenssl-0.15.1 ~amd64
-# required by >=salt-2015.8.1
-~dev-python/backports-abc-0.4 ~amd64
-~virtual/python-backports_abc-0 ~amd64

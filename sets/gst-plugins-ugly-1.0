@@ -6,6 +6,7 @@ media-plugins/gst-plugins-dvdread:1.0
 media-plugins/gst-plugins-lame:1.0
 media-plugins/gst-plugins-mad:1.0
 media-plugins/gst-plugins-mpeg2dec:1.0
+media-plugins/gst-plugins-mpg123:1.0
 media-plugins/gst-plugins-sidplay:1.0
 media-plugins/gst-plugins-twolame:1.0
 media-plugins/gst-plugins-x264:1.0

@@ -2,7 +2,6 @@
 gnome-base/gnome
 gnome-extra/gnome-shell-extensions
 gnome-extra/gnome-user-share
-gnome-extra/gnome-web-photo
 media-gfx/gnome-raw-thumbnailer
 media-sound/rhythmbox
 sys-apps/gnome-disk-utility
