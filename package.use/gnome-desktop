@@ -175,3 +175,7 @@ net-misc/networkmanager modemmanager ppp
 
 # gtk: required by evolution-data-server and gnome-keyring
 app-crypt/gcr gtk
+
+# jpeg2k: required by gnome-photos
+# raw: required by gnome-photos
+media-libs/gegl jpeg2k raw
