@@ -15,7 +15,7 @@ dev-lang/python sqlite
 # gnome: required by gnome-documents
 dev-libs/libgdata gnome
 
-# python: required for plugin sypport in rhythmbox and others
+# python: required for plugin support in rhythmbox and others
 dev-libs/libpeas python
 
 # python: required by system-config-printer and itstools
