@@ -41,7 +41,7 @@ media-libs/libpng apng
 media-libs/gst-plugins-base X
 
 # python: required by dbus
-media-sound/rhythmbox cdr clutter daap musicbrainz python
+media-sound/rhythmbox cdr daap python
 
 # nsplugin: plugin for web browsers
 # python: plugins
@@ -84,9 +84,6 @@ media-plugins/gst-plugins-meta ffmpeg
 # gtk: integration to the desktop
 x11-misc/redshift geoclue gtk
 
-# geo: location awareness
-media-gfx/darktable geo
-
 # Meta ebuilds
 media-plugins/gst-plugins-meta X cdda dts http ogg lame mpeg taglib xv xvid
 net-im/telepathy-connection-managers icq irc msn sip yahoo
@@ -97,10 +94,8 @@ net-im/pidgin -eds -gstreamer -gtk -ncurses -spell -xscreensaver
 # map: enable contact's map
 mail-client/evolution map
 
-# yahoo-geo: default recommended provider
-# hostip: alternative provider
 # gtk: enable gtk based utility
-app-misc/geoclue -geonames hostip -manual -nominatim gtk yahoo-geo
+app-misc/geoclue gtk
 
 # gtk: required by gnome-raw-thumbnailer
 media-libs/libopenraw gtk
