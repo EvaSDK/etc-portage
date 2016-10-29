@@ -137,11 +137,11 @@ media-libs/clutter-gtk X gtk
 # X: must match clutter (header automagic)
 media-libs/clutter-gst X
 
-# flickr: enable flickr support
+# flickr: dependency on Gnome 2 era python packages
 # map: enable map plugin
 # python: enable python based plugins
 # python_single_target_python3_4: PMS has no way to default enable this yet
-media-gfx/eog-plugins flickr map python python_single_target_python3_4
+media-gfx/eog-plugins -flickr map python python_single_target_python3_4
 
 # gtk: enable gtk GUI
 app-dicts/verbiste gtk
