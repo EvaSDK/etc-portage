@@ -168,6 +168,9 @@ net-misc/spice-gtk -smartcard
 # ppp: required by USE=modemmanager
 net-misc/networkmanager modemmanager ppp
 
+# gtk: enable GTK utilities and full gnome-control-center VPN panel
+net-misc/networkmanager-openvpn gtk
+
 # gtk: required by evolution-data-server and gnome-keyring
 app-crypt/gcr gtk
 
