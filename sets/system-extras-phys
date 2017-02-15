@@ -1,5 +1,6 @@
 app-admin/eclean-kernel
 net-misc/ntp
+sys-apps/kexec-tools
 sys-apps/microcode-ctl
 sys-apps/smartmontools
 sys-apps/usbutils
