@@ -1,0 +1,4 @@
+# ldap: do not enable LDAP support
+# python: required by samba-4, bug #609656
+sys-libs/ldb -ldap python
+sys-libs/tevent python
