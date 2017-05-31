@@ -163,9 +163,10 @@ app-emulation/spice smartcard
 # usbredir: required by gnome-boxes
 net-misc/spice-gtk -gstreamer gtk3 smartcard usbredir
 
+# consolekit: at-most-one-of consolekit, elogind or systemd
 # modemmanager: required by gnome-control-center for network panel
 # ppp: required by USE=modemmanager
-net-misc/networkmanager modemmanager ppp
+net-misc/networkmanager -consolekit modemmanager ppp
 
 # gtk: enable GTK utilities and full gnome-control-center VPN panel
 net-misc/networkmanager-openvpn gtk
