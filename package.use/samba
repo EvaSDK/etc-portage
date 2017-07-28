@@ -6,4 +6,5 @@ sys-libs/tdb python
 sys-libs/tevent python
 
 # client: required by gnome-control-center for printer capplet
-net-fs/samba client
+# ldap: do not enable LDAP support
+net-fs/samba -ldap client
