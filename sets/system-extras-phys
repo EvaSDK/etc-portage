@@ -5,6 +5,7 @@ sys-apps/kexec-tools
 sys-apps/microcode-ctl
 sys-apps/smartmontools
 sys-apps/usbutils
+sys-block/zram-init
 sys-boot/grub
 sys-boot/os-prober
 sys-kernel/dracut
