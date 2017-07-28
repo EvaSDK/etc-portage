@@ -1,4 +1,5 @@
 app-admin/eclean-kernel
+net-dns/unbound
 net-misc/ntp
 sys-apps/irqbalance
 sys-apps/kexec-tools
