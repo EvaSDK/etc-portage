@@ -1,0 +1,3 @@
+# lzo: apparently lzo cannot be enabled when lz4 is
+#      select lzo as using lz4 with older openvpn server does not worker well
+net-vpn/openvpn lzo -lz4

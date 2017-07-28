@@ -1,6 +1,12 @@
 # cxx: required by cups-filter
 app-text/poppler cxx
 
+# text: required by simple-scan through xdg-utils
+app-text/xmlto text
+
+# vala: required by simple-scan
+dev-libs/libgusb vala
+
 # scanner: required by ocrfeeder
 dev-python/pillow scanner
 
