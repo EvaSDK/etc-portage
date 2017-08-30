@@ -137,8 +137,7 @@ media-libs/clutter-gst X
 # flickr: dependency on Gnome 2 era python packages
 # map: enable map plugin
 # python: enable python based plugins
-# python_single_target_python3_4: PMS has no way to default enable this yet
-media-gfx/eog-plugins -flickr map python PYTHON_SINGLE_TARGET: python3_4
+media-gfx/eog-plugins -flickr map python
 
 # gtk: enable gtk GUI
 app-dicts/verbiste gtk
