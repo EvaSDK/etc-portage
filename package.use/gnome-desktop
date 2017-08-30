@@ -94,9 +94,6 @@ net-im/telepathy-connection-managers icq irc msn sip yahoo
 # anything else than libpurple
 net-im/pidgin -eds -gstreamer -gtk -ncurses -spell -xscreensaver
 
-# map: enable contact's map
-mail-client/evolution map
-
 # gtk: enable gtk based utility
 app-misc/geoclue gtk
 
