@@ -9,6 +9,9 @@ app-office/gnucash ofx
 # cairo: required via evince
 app-text/poppler cairo
 
+# text: required by xdg-utils which is used throughout the desktop
+app-text/xmlto text
+
 # sqlite: required by firefox in python2, and ipython for all slots
 dev-lang/python sqlite
 
