@@ -180,3 +180,9 @@ app-crypt/gcr gtk
 # jpeg2k: required by gnome-photos
 # raw: required by gnome-photos
 media-libs/gegl jpeg2k raw
+
+# xkb: required by mutter via libxkbcommon
+x11-libs/libxcb xkb
+
+# X: required by mutter
+x11-libs/libxkbcommon X
