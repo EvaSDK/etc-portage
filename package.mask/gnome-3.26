@@ -131,7 +131,7 @@
 >=sys-apps/gnome-disk-utility-3.25
 >=www-client/epiphany-3.25
 >=x11-libs/gdk-pixbuf-2.37
->=x11-libs/gtef-2
+>=x11-libs/gtef-2.1
 >=x11-libs/gtk+-3.23
 >=x11-libs/gtksourceview-3.25
 >=x11-libs/libwnck-3.25
