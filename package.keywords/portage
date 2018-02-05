@@ -1,2 +1,5 @@
-<sys-apps/portage-9999 ~amd64
+<app-crypt/gnupg-2.2.4-r1 ~amd64
+<app-portage/gemato-9999 ~amd64
+<dev-python/bz2file-9999 ~amd64
 <sys-apps/install-xattr-9999 ~amd64
+<sys-apps/portage-9999 ~amd64

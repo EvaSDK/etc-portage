@@ -1,4 +1,5 @@
 app-admin/eclean-kernel
+app-misc/resolve-march-native
 net-dns/unbound
 net-misc/ntp
 sys-apps/haveged
