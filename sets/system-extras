@@ -1,6 +1,6 @@
 app-admin/apg
 app-admin/logrotate
-app-admin/restart_services
+app-admin/restart-services
 app-admin/salt
 app-admin/sudo
 app-admin/superadduser
