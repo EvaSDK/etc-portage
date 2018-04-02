@@ -106,10 +106,6 @@ media-libs/libopenraw gtk
 # upower: enable power management support
 app-misc/tracker -ffmpeg gstreamer gtk iso pdf playlist rss upower
 
-# zeitgeist
-gnome-extra/zeitgeist downloads-monitor extensions plugins telepathy
-gnome-extra/zeitgeist-datasources firefox telepathy vim
-
 # gptfdisk: parted is good enough for me
 sys-fs/udisks -gptfdisk
 
