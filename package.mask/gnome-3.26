@@ -35,7 +35,7 @@
 >=dev-util/gdbus-codegen-2.53
 >=dev-util/gnome-devel-docs-3.25
 >=dev-util/gtk-update-icon-cache-3.25
->=dev-vcs/gitg-3.25
+# >=dev-vcs/gitg-3.25
 >=games-arcade/gnome-nibbles-3.25
 >=games-arcade/gnome-robots-3.25
 >=games-board/aisleriot-3.25
