@@ -1,2 +1,0 @@
-# monolithic: required by sys-apps/microcode-ctl
-sys-firmware/intel-microcode monolithic

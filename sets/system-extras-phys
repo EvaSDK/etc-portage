@@ -5,7 +5,6 @@ net-misc/ntp
 sys-apps/haveged
 sys-apps/irqbalance
 sys-apps/kexec-tools
-sys-apps/microcode-ctl
 sys-apps/smartmontools
 sys-apps/usbutils
 sys-block/zram-init
