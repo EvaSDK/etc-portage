@@ -21,7 +21,6 @@ media-plugins/gst-plugins-openh264:1.0
 media-plugins/gst-plugins-opus:1.0
 media-plugins/gst-plugins-resindvd:1.0
 media-plugins/gst-plugins-rtmp:1.0
-media-plugins/gst-plugins-schroedinger:1.0
 media-plugins/gst-plugins-smoothstreaming:1.0
 media-plugins/gst-plugins-soundtouch:1.0
 media-plugins/gst-plugins-srtp:1.0

@@ -16,7 +16,6 @@ media-plugins/gst-plugins-ofa:0.10
 media-plugins/gst-plugins-opus:0.10
 media-plugins/gst-plugins-resindvd:0.10
 media-plugins/gst-plugins-rtmp:0.10
-media-plugins/gst-plugins-schroedinger:0.10
 media-plugins/gst-plugins-soundtouch:0.10
 media-plugins/gst-plugins-vp8:0.10
 media-plugins/gst-plugins-xvid:0.10
