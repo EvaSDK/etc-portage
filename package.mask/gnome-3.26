@@ -35,7 +35,7 @@
 >=dev-util/gdbus-codegen-2.53
 >=dev-util/gnome-devel-docs-3.25
 >=dev-util/gtk-update-icon-cache-3.25
->=dev-vcs/gitg-3.25
+# >=dev-vcs/gitg-3.25
 >=games-arcade/gnome-nibbles-3.25
 >=games-arcade/gnome-robots-3.25
 >=games-board/aisleriot-3.25
@@ -119,7 +119,7 @@
 >=net-libs/glib-networking-2.53
 >=net-libs/gnome-online-accounts-3.25
 >=net-libs/libsoup-2.59
->=net-libs/webkit-gtk-2.17
+# >=net-libs/webkit-gtk-2.17
 >=net-misc/gnome-online-miners-3.25
 >=net-misc/rygel-0.35
 >=net-misc/vinagre-3.25
