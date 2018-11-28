@@ -1,5 +1,6 @@
 dev-texlive/texlive-bibtexextra
 dev-texlive/texlive-latexextra
+media-gfx/brother-scan4-bin
 media-gfx/simple-scan
-net-print/hplip
+net-print/brother-mfc9340cdw-bin
 virtual/latex-base
