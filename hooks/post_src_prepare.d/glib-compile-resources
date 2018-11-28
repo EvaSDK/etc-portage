@@ -23,7 +23,7 @@ function gresource_file_parsing() {
 
 	done < <(cd "${S}" && find . -type f -name "*.gresource.xml*" -print0 2>/dev/null)
 
-	if [[ ${require_gdk_pixbuf} -eq 1 ]] && ! egrep -q "x[[:blank:]]+[>=]*11-libs/gdk-pixbuf" "${EBUILD}" ; then
+	if [[ ${require_gdk_pixbuf} -eq 1 ]] && ! egrep -q "[[:blank:]]+[>=]*x11-libs/gdk-pixbuf" "${EBUILD}" ; then
 		ewarn "${PN} requires x11-libs/gdk-pixbuf:2 in DEPEND"
 	fi
 
