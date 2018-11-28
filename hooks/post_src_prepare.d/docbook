@@ -1,11 +1,35 @@
 #!/bin/bash
+#
+# Prints DTD that might be used during build time so package can properly
+# depend on it and avoid network access during build. Each doctype will
+# only be printed once in order to avoid spamming console.
 
-for dir in help doc docs
-do
-	if [[ -d ${S}/$dir ]]; then
-		einfo "Required DTDs for /$dir"
-		find "${S}"/$dir -type f -name "*.xml" \
-			-exec sed -nr '/DOCTYPE/ s:.*(-//.*?//EN).*:\1:p' {} \; \
-			| uniq | xargs einfo
-	fi
-done
+function extract_xml_doctype() {
+	local xml doctype
+	touch "${T}"/portage-bashrc-doctype
+
+	while IFS= read -r -d '' xml
+	do
+		doctype=$(sed -nre '
+			/<!--/ {
+			:comment-loop
+			    /-->/ b comment-stop
+			    N
+			    b comment-loop
+			:comment-stop
+			    d
+			}
+			/<!DOCTYPE/ {
+			    s:.*(-//.*?//EN).*:\1: p
+			}
+			' "${xml}")
+		if [ -n "${doctype}" ] && ! grep -q -- "${doctype}" "${T}"/portage-bashrc-doctype ; then
+			einfo "    Required DTD for ${xml}"
+			echo  " *        ${doctype}"
+			echo "${doctype}" > "${T}"/portage-bashrc-doctype
+		fi
+
+	done < <(cd "${S}" && find . -type f -name "*.xml" -print0 2>/dev/null)
+}
+
+extract_xml_doctype
