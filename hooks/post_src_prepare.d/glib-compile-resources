@@ -1,0 +1,39 @@
+#!/bin/bash
+#
+# Extract glib-compile-resource specific requirements per package according to
+# the description files it provides as documented at
+# https://developer.gnome.org/gio/stable/glib-compile-resources.html
+
+function gresource_file_parsing() {
+	local gresource require_gdk_pixbuf=0 require_libxml2=0 require_json_glib=0
+
+	while IFS= read -r -d '' gresource ; do
+
+		if grep -q "to-pixdata" "${gresource}" ; then
+			require_gdk_pixbuf=1
+		fi
+
+		if grep -q "xml-stripblanks" "${gresource}" ; then
+			require_libxml2=1
+		fi
+
+		if grep -q "json-stripblanks" "${gresource}" ; then
+			require_json_glib=1
+		fi
+
+	done < <(cd "${S}" && find . -type f -name "*.gresource.xml*" -print0 2>/dev/null)
+
+	if [[ ${require_gdk_pixbuf} -eq 1 ]] && ! egrep -q "x[[:blank:]]+[>=]*11-libs/gdk-pixbuf" "${EBUILD}" ; then
+		ewarn "${PN} requires x11-libs/gdk-pixbuf:2 in DEPEND"
+	fi
+
+	if [[ ${require_libxml2} -eq 1 ]] && ! egrep -q "[[:blank:]]+[>=]*dev-libs/libxml2" "${EBUILD}" ; then
+		ewarn "${PN} requires dev-libs/libxml2:2 in DEPEND"
+	fi
+
+	if [[ ${require_json_glib} -eq 1 ]] && ! egrep -q "[[:blank:]]+[>=]*dev-libs/json-glib" "${EBUILD}"; then
+		ewarn "${PN} requires dev-libs/json-glib in DEPEND"
+	fi
+}
+
+gresource_file_parsing
