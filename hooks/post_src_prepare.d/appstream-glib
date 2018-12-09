@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+# Extract glib-compile-resource specific requirements per package according to
+# the description files it provides as documented at
+# https://developer.gnome.org/gio/stable/glib-compile-resources.html
+
+function appdata_file_parsing() {
+	local appdata require_appstream_glib=0
+
+	while IFS= read -r -d '' appdata ; do
+
+		if grep -q "developer_name" "${appdata}" ; then
+			require_appstream_glib=1
+		fi
+
+	done < <(cd "${S}" && find . -type f \( -name "*.appdata.xml*" -o -name "*.metainfo.xml*" \)  -print0 2>/dev/null)
+
+	if [[ ${require_appstream_glib} -eq 1 ]] && ! egrep -q "[[:blank:]]+[>=]*dev-libs/appstream-glib" "${EBUILD}" ; then
+		ewarn "${PN} requires dev-libs/appstream-glib in DEPEND"
+	fi
+}
+
+appdata_file_parsing
