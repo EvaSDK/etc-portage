@@ -13,7 +13,12 @@ function appdata_file_parsing() {
 			require_appstream_glib=1
 		fi
 
-	done < <(cd "${S}" && find . -type f \( -name "*.appdata.xml*" -o -name "*.metainfo.xml*" \)  -print0 2>/dev/null)
+	done < <(cd "${S}" && find . -type f -name "*.appdata.xml*" -print0 2>/dev/null)
+
+
+	if [[ -n "$(find . -type f -name "*.metainfo.xml*")" ]] ; then
+		require_appstream_glib=1
+	fi
 
 	if [[ ${require_appstream_glib} -eq 1 ]] && ! egrep -q "[[:blank:]]+[>=]*dev-libs/appstream-glib" "${EBUILD}" ; then
 		ewarn "${PN} requires dev-libs/appstream-glib in DEPEND"
