@@ -19,7 +19,7 @@ function extract_xml_doctype() {
 			:comment-stop
 			    d
 			}
-			/<!DOCTYPE/ {
+			/<!DOCTYPE/I {
 			    s:.*(-//.*?//EN).*:\1: p
 			}
 			' "${xml}")
