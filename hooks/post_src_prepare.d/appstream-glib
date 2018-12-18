@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# Extract glib-compile-resource specific requirements per package according to
-# the description files it provides as documented at
-# https://developer.gnome.org/gio/stable/glib-compile-resources.html
+# Extract appstream-glib requirements.
+# Needed when package installs metainfo.xml as gettext does not provide an adequate loc yet.
+# Needed when developer_name tag is used as gettext its file does not support this tag yet.
 
 function appdata_file_parsing() {
 	local appdata require_appstream_glib=0
