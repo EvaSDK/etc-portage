@@ -46,9 +46,8 @@ media-libs/gst-plugins-base X
 # python: required by dbus
 media-sound/rhythmbox cdr daap python
 
-# nsplugin: plugin for web browsers
 # python: plugins
-media-video/totem nsplugin python
+media-video/totem python
 
 # autoipd: required by networkmanager
 # gtk3: required by vinagre
