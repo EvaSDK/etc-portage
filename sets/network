@@ -1,8 +1,11 @@
+app-admin/ulogd
 net-analyzer/iftop
 net-analyzer/nload
+net-analyzer/nmap
 net-firewall/iptables
 net-fs/nfs-utils
 net-fs/nfs4-acl-tools
+net-misc/iperf
 net-misc/wakeonlan
 sys-apps/ethtool
 sys-apps/iproute2
