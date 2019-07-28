@@ -19,7 +19,6 @@ app-office/gnumeric
 app-office/abiword
 app-office/gnucash
 # Gnome extras
-app-crypt/seahorse-sharing
 app-editors/gedit-plugins
 app-misc/bijiben
 app-misc/gnote
@@ -30,7 +29,6 @@ gnome-extra/gnome-clocks
 gnome-extra/gnome-logs
 gnome-extra/gnome-software
 gnome-extra/gnome-weather
-gnome-extra/seahorse-nautilus
 media-gfx/eog-plugins
 media-gfx/gnome-photos
 media-sound/gnome-music

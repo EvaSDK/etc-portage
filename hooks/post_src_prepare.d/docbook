@@ -19,7 +19,7 @@ function extract_xml_doctype() {
 			:comment-stop
 			    d
 			}
-			/<!DOCTYPE/ {
+			/<!DOCTYPE/I {
 			    s:.*(-//.*?//EN).*:\1: p
 			}
 			' "${xml}")
@@ -29,7 +29,7 @@ function extract_xml_doctype() {
 			echo "${doctype}" > "${T}"/portage-bashrc-doctype
 		fi
 
-	done < <(cd "${S}" && find . -type f -name "*.xml" -print0 2>/dev/null)
+	done < <(cd "${S}" && find . -type f \( -name "*.xml" -o -name "*.sgml" \) -print0 2>/dev/null)
 }
 
 extract_xml_doctype

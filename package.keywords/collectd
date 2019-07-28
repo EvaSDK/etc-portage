@@ -1,1 +1,1 @@
-app-admin/collectd ~amd64
+app-metrics/collectd ~amd64

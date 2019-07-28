@@ -1,0 +1,28 @@
+#!/bin/bash
+#
+# Extract appstream-glib requirements.
+# Needed when package installs metainfo.xml as gettext does not provide an adequate loc yet.
+# Needed when developer_name tag is used as gettext its file does not support this tag yet.
+
+function appdata_file_parsing() {
+	local appdata require_appstream_glib=0
+
+	while IFS= read -r -d '' appdata ; do
+
+		if grep -q "developer_name" "${appdata}" ; then
+			require_appstream_glib=1
+		fi
+
+	done < <(cd "${S}" && find . -type f -name "*.appdata.xml*" -print0 2>/dev/null)
+
+
+	if [[ -n "$(find . -type f -name "*.metainfo.xml*")" ]] ; then
+		require_appstream_glib=1
+	fi
+
+	if [[ ${require_appstream_glib} -eq 1 ]] && ! egrep -q "[[:blank:]]+[>=]*dev-libs/appstream-glib" "${EBUILD}" ; then
+		ewarn "${PN} requires dev-libs/appstream-glib in DEPEND"
+	fi
+}
+
+appdata_file_parsing
