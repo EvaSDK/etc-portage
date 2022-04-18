@@ -47,3 +47,8 @@ post_src_compile() {
 post_src_install() {
 	_run_hooks post_src_install
 }
+
+pre_pkg_preinst() {
+	_run_hooks pre_pkg_preinst
+}
+
