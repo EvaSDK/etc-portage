@@ -30,6 +30,8 @@ post_src_unpack() {
 }
 
 post_src_prepare() {
+	[[ -d ${S} ]] && return
+
 	_run_hooks post_src_prepare
 }
 

@@ -1,7 +1,6 @@
 # Gnome base
 gnome-base/gnome
 gnome-extra/gnome-shell-extensions
-gnome-extra/gnome-user-share
 media-gfx/gnome-raw-thumbnailer
 media-sound/rhythmbox
 sys-apps/gnome-disk-utility
@@ -10,13 +9,12 @@ sys-block/gparted
 app-dicts/myspell-en
 app-dicts/myspell-fr
 # ISO support for file-roller
-virtual/cdrtools
+app-cdr/cdrtools
 # Photo editing
 media-gfx/darktable
 sys-fs/fuse-exfat
 # Gnome office
 app-office/gnumeric
-app-office/abiword
 app-office/gnucash
 # Gnome extras
 app-editors/gedit-plugins
@@ -40,7 +38,4 @@ sci-geosciences/gnome-maps
 gnome-extra/eiciel
 net-misc/rygel
 net-p2p/transmission-remote-gtk
-x11-misc/redshift
-# For legacy media players on the web
-www-plugins/adobe-flash
 www-client/firefox
