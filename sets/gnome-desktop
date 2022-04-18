@@ -15,7 +15,6 @@ media-gfx/darktable
 sys-fs/fuse-exfat
 # Gnome office
 app-office/gnumeric
-app-office/abiword
 app-office/gnucash
 # Gnome extras
 app-editors/gedit-plugins
