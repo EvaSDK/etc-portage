@@ -38,7 +38,6 @@ sci-geosciences/gnome-maps
 gnome-extra/eiciel
 net-misc/rygel
 net-p2p/transmission-remote-gtk
-x11-misc/redshift
 # For legacy media players on the web
 www-plugins/adobe-flash
 www-client/firefox
