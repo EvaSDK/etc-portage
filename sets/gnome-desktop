@@ -9,7 +9,7 @@ sys-block/gparted
 app-dicts/myspell-en
 app-dicts/myspell-fr
 # ISO support for file-roller
-virtual/cdrtools
+app-cdr/cdrtools
 # Photo editing
 media-gfx/darktable
 sys-fs/fuse-exfat
