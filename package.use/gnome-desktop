@@ -50,9 +50,7 @@ media-sound/rhythmbox cdr daap python
 media-video/totem python
 
 # autoipd: required by networkmanager
-# gtk3: required by vinagre
-# mdnsreponder-compat: required by libgphoto2[zeroconf] via darktable
-net-dns/avahi autoipd gtk3 mdnsresponder-compat
+net-dns/avahi autoipd
 
 # X: required by gnome-session
 sys-apps/dbus X
