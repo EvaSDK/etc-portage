@@ -138,19 +138,8 @@ app-dicts/verbiste gtk
 # gnome: required by gnucash
 x11-libs/goffice gnome
 
-# smartcard: required by gnome-boxes
-# spice: required by gnome-boxes
-# usbredir: required by gnome-boxes
-app-emulation/qemu smartcard spice usbredir
-
-# smartcard: required by gnome-boxes via spice-gtk
-app-emulation/spice smartcard
-
 # gstreamer: select pulseaudio backend for managing sound
-# gtk3: required by gnome-boxes
-# smartcard: required by gnome-boxes
-# usbredir: required by gnome-boxes
-net-misc/spice-gtk -gstreamer gtk3 smartcard usbredir
+net-misc/spice-gtk -gstreamer
 
 # consolekit: at-most-one-of consolekit, elogind or systemd
 # modemmanager: required by gnome-control-center for network panel
