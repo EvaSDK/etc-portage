@@ -15,7 +15,6 @@ media-plugins/gst-plugins-modplug:1.0
 media-plugins/gst-plugins-mpeg2enc:1.0
 media-plugins/gst-plugins-mplex:1.0
 media-plugins/gst-plugins-neon:1.0
-media-plugins/gst-plugins-ofa:1.0
 media-plugins/gst-plugins-opencv:1.0
 media-plugins/gst-plugins-openh264:1.0
 media-plugins/gst-plugins-opus:1.0
