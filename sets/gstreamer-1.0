@@ -10,4 +10,3 @@ media-plugins/gst-plugins-libav:1.0
 media-plugins/gst-plugins-libnice:1.0
 media-plugins/gst-plugins-meta:1.0
 media-plugins/gst-plugins-vaapi:1.0
-media-plugins/gst-transcoder
