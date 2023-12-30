@@ -33,6 +33,7 @@ media-sound/gnome-sound-recorder
 net-irc/polari
 sci-geosciences/gnome-maps
 # Other
+app-dicts/verbiste
 gnome-extra/eiciel
 net-misc/rygel
 net-p2p/transmission-remote-gtk
