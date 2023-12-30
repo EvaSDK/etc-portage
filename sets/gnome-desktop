@@ -1,5 +1,6 @@
 # Gnome base
 gnome-base/gnome
+gnome-extra/gnome-browser-connector
 gnome-extra/gnome-shell-extensions
 media-sound/rhythmbox
 sys-apps/gnome-disk-utility
