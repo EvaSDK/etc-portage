@@ -145,6 +145,9 @@ app-crypt/gcr gtk
 # raw: required by gnome-photos
 media-libs/gegl jpeg2k raw
 
+# graphite: required by darktable
+sys-devel/gcc graphite
+
 # xkb: required by mutter via libxkbcommon
 x11-libs/libxcb xkb
 
