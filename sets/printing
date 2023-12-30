@@ -6,4 +6,5 @@ dev-texlive/texlive-latexrecommended
 media-gfx/brother-scan4-bin
 media-gfx/simple-scan
 net-print/brother-mfc9340cdw-bin
+net-print/cups-meta
 virtual/latex-base
