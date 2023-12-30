@@ -1,7 +1,6 @@
 # Gnome base
 gnome-base/gnome
 gnome-extra/gnome-shell-extensions
-media-gfx/gnome-raw-thumbnailer
 media-sound/rhythmbox
 sys-apps/gnome-disk-utility
 sys-block/gparted
