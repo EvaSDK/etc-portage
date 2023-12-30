@@ -97,7 +97,8 @@ media-libs/libopenraw gtk
 # playlist: enable playlist parsing
 # rss: enable RSS miner
 # upower: enable power management support
-app-misc/tracker -ffmpeg gstreamer gtk iso pdf playlist rss upower
+# vala: required by rygel
+app-misc/tracker -ffmpeg gstreamer gtk iso pdf playlist rss upower vala
 
 # pull support for regularly used FS
 sys-block/gparted btrfs mdadm fat ntfs reiserfs xfs
@@ -144,6 +145,18 @@ app-crypt/gcr gtk
 # jpeg2k: required by gnome-photos
 # raw: required by gnome-photos
 media-libs/gegl jpeg2k raw
+
+# vala: required by rygel
+media-libs/libmediaart vala
+
+# vala: required by rygel
+net-libs/gssdp vala
+
+# vala: required by rygel
+net-libs/gupnp vala
+
+# vala: required by rygel
+net-libs/gupnp-av vala
 
 # graphite: required by darktable
 sys-devel/gcc graphite
