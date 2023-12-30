@@ -80,10 +80,6 @@ x11-libs/pango X
 # ffmpeg: needed by firefox
 media-plugins/gst-plugins-meta ffmpeg
 
-# geoclue: location awareness
-# gtk: integration to the desktop
-x11-misc/redshift geoclue gtk
-
 # Meta ebuilds
 media-plugins/gst-plugins-meta X cdda dts http ogg lame mpeg taglib xv xvid
 net-im/telepathy-connection-managers icq irc msn sip yahoo
@@ -102,9 +98,6 @@ media-libs/libopenraw gtk
 # rss: enable RSS miner
 # upower: enable power management support
 app-misc/tracker -ffmpeg gstreamer gtk iso pdf playlist rss upower
-
-# gptfdisk: parted is good enough for me
-sys-fs/udisks -gptfdisk
 
 # pull support for regularly used FS
 sys-block/gparted btrfs mdadm fat ntfs reiserfs xfs
@@ -138,13 +131,9 @@ app-dicts/verbiste gtk
 # gnome: required by gnucash
 x11-libs/goffice gnome
 
-# gstreamer: select pulseaudio backend for managing sound
-net-misc/spice-gtk -gstreamer
-
-# consolekit: at-most-one-of consolekit, elogind or systemd
 # modemmanager: required by gnome-control-center for network panel
 # ppp: required by USE=modemmanager
-net-misc/networkmanager -consolekit modemmanager ppp
+net-misc/networkmanager modemmanager ppp
 
 # gtk: enable GTK utilities and full gnome-control-center VPN panel
 net-vpn/networkmanager-openvpn gtk
