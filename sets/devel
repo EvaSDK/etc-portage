@@ -1,3 +1,4 @@
 app-text/wgetpaste
 dev-vcs/git
+dev-vcs/git-absorb
 dev-vcs/pre-commit
