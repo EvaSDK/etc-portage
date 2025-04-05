@@ -1,4 +1,4 @@
 app-doc/eclass-manpages
-dev-perl/Gentoo-App-Pram
+app-portage/pram
 dev-util/pkgdev
 www-client/pybugz
