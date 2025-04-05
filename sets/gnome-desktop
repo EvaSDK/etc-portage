@@ -17,7 +17,6 @@ sys-fs/fuse-exfat
 app-office/gnumeric
 app-office/gnucash
 # Gnome extras
-app-editors/gedit-plugins
 app-misc/bijiben
 app-misc/gnote
 gnome-extra/gnome-calendar
