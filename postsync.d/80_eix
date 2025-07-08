@@ -1,3 +1,0 @@
-#!/bin/sh
-
-[ -x /usr/bin/eix-update ] && /usr/bin/eix-update ${PORTAGE_QUIET:+-q}
