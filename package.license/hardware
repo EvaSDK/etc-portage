@@ -1,0 +1,4 @@
+dev-libs/amdgpu-pro-opencl AMD-GPU-PRO-EULA
+dev-util/intel-ocl-sdk Intel-SDP
+sys-firmware/intel-microcode intel-ucode
+sys-kernel/linux-firmware linux-fw-redistributable no-source-code
