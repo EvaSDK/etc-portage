@@ -54,10 +54,18 @@ net-dns/avahi autoipd
 
 # X: required by gnome-session
 sys-apps/dbus X
+
 # X: required by gtk+[X]
 x11-libs/gdk-pixbuf X
-# X: at-least-one-of X, aqua, wayland
-x11-libs/gtk+ X
+# X: still required by many packages
+# wayland: choose wayland over X
+x11-libs/gtk+:3 wayland X
+
+# X: must be aligned with gtk+:3
+dev-cpp/gtkmm:3.0 wayland X
+
+# X: choose wayland over X
+gnome-extra/sushi wayland -X
 
 # gtk: pull graphical dialog when changing locale
 x11-misc/xdg-user-dirs gtk
@@ -81,7 +89,7 @@ x11-libs/pango X
 media-plugins/gst-plugins-meta ffmpeg
 
 # Meta ebuilds
-media-plugins/gst-plugins-meta X cdda dts http ogg lame mpeg taglib xv xvid
+media-plugins/gst-plugins-meta cdda dts http ogg lame mpeg taglib xv xvid
 net-im/telepathy-connection-managers icq irc msn sip yahoo
 # required by USE=msn in telepathy-connection-managers but we do not want
 # anything else than libpurple
@@ -111,15 +119,13 @@ media-libs/cogl gles2
 
 # egl: required by mutter[kms]
 # gtk: required by totem
-# X: required by mutter
-media-libs/clutter X egl gtk
+media-libs/clutter egl gtk
 
-# X: must match clutter (header automagic)
 # gtk: must match clutter (header automagic)
-media-libs/clutter-gtk X gtk
+media-libs/clutter-gtk gtk
 
 # X: must match clutter (header automagic)
-media-libs/clutter-gst X
+# media-libs/clutter-gst X
 
 # flickr: dependency on Gnome 2 era python packages
 # map: enable map plugin
@@ -160,9 +166,6 @@ net-libs/gupnp-av vala
 
 # graphite: required by darktable
 sys-devel/gcc graphite
-
-# xkb: required by mutter via libxkbcommon
-x11-libs/libxcb xkb
 
 # X: required by mutter
 x11-libs/libxkbcommon X
