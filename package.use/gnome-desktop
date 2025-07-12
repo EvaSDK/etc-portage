@@ -1,8 +1,3 @@
-# python: support for python plugins
-app-editors/gedit python
-# terminal: support for integrated terminal via vte
-app-editors/gedit-plugins python terminal
-
 # ofx: support for exchange format
 app-office/gnucash ofx
 
