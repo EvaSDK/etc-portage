@@ -98,7 +98,7 @@ media-libs/libopenraw gtk
 # rss: enable RSS miner
 # upower: enable power management support
 # vala: required by rygel
-app-misc/tracker -ffmpeg gstreamer gtk iso pdf playlist rss upower vala
+app-misc/tinysparql -ffmpeg gstreamer gtk iso pdf playlist rss upower vala
 
 # pull support for regularly used FS
 sys-block/gparted btrfs mdadm fat ntfs reiserfs xfs
