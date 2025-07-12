@@ -122,11 +122,6 @@ media-libs/clutter-gtk gtk
 # X: must match clutter (header automagic)
 # media-libs/clutter-gst X
 
-# flickr: dependency on Gnome 2 era python packages
-# map: enable map plugin
-# python: enable python based plugins
-media-gfx/eog-plugins -flickr map python
-
 # gtk: enable gtk GUI
 app-dicts/verbiste gtk
 
