@@ -169,3 +169,6 @@ sys-devel/gcc graphite
 
 # X: required by mutter
 x11-libs/libxkbcommon X
+
+# gtk: only used to render splash under X11 for debugging purpose
+sys-boot/plymouth -gtk
