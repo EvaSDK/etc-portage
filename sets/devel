@@ -1,3 +1,5 @@
+app-crypt/age
+app-crypt/sops
 app-misc/jq
 app-misc/yq-go
 app-text/wgetpaste
