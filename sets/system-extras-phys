@@ -7,7 +7,6 @@ sys-apps/irqbalance
 sys-apps/kexec-tools
 sys-apps/smartmontools
 sys-apps/usbutils
-sys-block/zram-init
 sys-boot/grub
 sys-boot/os-prober
 sys-kernel/dracut
