@@ -6,9 +6,6 @@ gui-apps/gnome-console
 media-sound/rhythmbox
 sys-apps/gnome-disk-utility
 sys-block/gparted
-# Dictionaries
-app-dicts/myspell-en
-app-dicts/myspell-fr
 # ISO support for file-roller
 app-cdr/cdrtools
 # Photo editing
