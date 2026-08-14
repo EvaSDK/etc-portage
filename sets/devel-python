@@ -1,5 +1,5 @@
-dev-python/pip
 dev-python/pylint
 dev-python/tox
+dev-python/uv
 dev-python/virtualenv
 dev-python/virtualenvwrapper
