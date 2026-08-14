@@ -17,6 +17,7 @@ app-office/gnucash
 # Gnome extras
 app-misc/bijiben
 app-misc/gnote
+app-text/papers
 gnome-extra/gnome-calendar
 gnome-extra/gnome-characters
 gnome-extra/gnome-clocks
