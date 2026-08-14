@@ -24,8 +24,10 @@ gnome-extra/gnome-logs
 gnome-extra/gnome-software
 gnome-extra/gnome-weather
 media-gfx/gnome-photos
+media-gfx/loupe
 media-sound/gnome-music
 media-sound/gnome-sound-recorder
+media-video/showtime
 net-irc/polari
 sci-geosciences/gnome-maps
 # Other
