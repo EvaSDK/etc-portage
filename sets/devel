@@ -1,3 +1,5 @@
+app-misc/jq
+app-misc/yq-go
 app-text/wgetpaste
 dev-vcs/git
 dev-vcs/git-absorb
