@@ -17,7 +17,7 @@ dev-libs/libgdata gnome
 dev-libs/libpeas python
 
 # python: required by system-config-printer and itstools
-dev-libs/libxml2 python 
+dev-libs/libxml2 python
 
 # cdda: required by sound-juicer
 # fuse: add support for large SD cards via fuse-exfat
