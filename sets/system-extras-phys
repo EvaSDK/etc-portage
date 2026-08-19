@@ -2,7 +2,6 @@ app-admin/eclean-kernel
 app-misc/resolve-march-native
 net-dns/unbound
 net-misc/chrony
-sys-apps/irqbalance
 sys-apps/kexec-tools
 sys-apps/smartmontools
 sys-apps/usbutils
