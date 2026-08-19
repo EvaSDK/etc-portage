@@ -1,0 +1,4 @@
+dev-util/ccache
+dev-util/devhelp
+sys-apps/man-pages-posix
+sys-devel/distcc

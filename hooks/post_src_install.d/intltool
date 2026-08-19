@@ -6,7 +6,7 @@ fi
 
 if [[ -d ${D}/usr/share/locale/ ]]; then
 	loc=$(find ${D}/usr/share/locale/ -type f -iname "${PN#lib}*.mo" | wc -l)
-	
+
 	if [[ $loc -eq 0 ]]; then
 		eerror "QA Error:"
 		eerror
@@ -19,7 +19,7 @@ fi
 
 if [[ -n $LINGUAS ]]; then
 	max_loc=$(echo $LINGUAS | tr -s ' ' '\n' | wc -l)
-	
+
 	if [[ $loc -gt $max_loc ]]; then
 		eerror
 		eerror "Too much locales ($loc) wrt to user settings ($max_loc)."

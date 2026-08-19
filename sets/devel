@@ -1,0 +1,9 @@
+app-crypt/age
+app-crypt/sops
+app-misc/jq
+app-misc/yq-go
+app-text/wgetpaste
+app-text/yamlfmt
+dev-util/prek
+dev-vcs/git
+dev-vcs/git-absorb

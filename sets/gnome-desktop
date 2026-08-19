@@ -1,13 +1,11 @@
 # Gnome base
 gnome-base/gnome
+gnome-extra/gnome-browser-connector
 gnome-extra/gnome-shell-extensions
-media-gfx/gnome-raw-thumbnailer
+gui-apps/gnome-console
 media-sound/rhythmbox
 sys-apps/gnome-disk-utility
 sys-block/gparted
-# Dictionaries
-app-dicts/myspell-en
-app-dicts/myspell-fr
 # ISO support for file-roller
 app-cdr/cdrtools
 # Photo editing
@@ -17,24 +15,25 @@ sys-fs/fuse-exfat
 app-office/gnumeric
 app-office/gnucash
 # Gnome extras
-app-editors/gedit-plugins
 app-misc/bijiben
 app-misc/gnote
-gnome-extra/gnome-boxes
+app-text/papers
 gnome-extra/gnome-calendar
 gnome-extra/gnome-characters
 gnome-extra/gnome-clocks
 gnome-extra/gnome-logs
 gnome-extra/gnome-software
 gnome-extra/gnome-weather
-media-gfx/eog-plugins
 media-gfx/gnome-photos
+media-gfx/loupe
 media-sound/gnome-music
 media-sound/gnome-sound-recorder
-net-im/empathy
+media-video/showtime
+net-im/fractal
 net-irc/polari
 sci-geosciences/gnome-maps
 # Other
+app-dicts/verbiste
 gnome-extra/eiciel
 net-misc/rygel
 net-p2p/transmission-remote-gtk
