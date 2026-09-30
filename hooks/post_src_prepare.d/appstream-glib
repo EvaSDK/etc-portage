@@ -7,6 +7,9 @@
 function appdata_file_parsing() {
 	local appdata require_appstream_glib=0
 
+	# virtual/* ebuilds
+	[ ! -d "${S}" ] && exit
+
 	while IFS= read -r -d '' appdata ; do
 
 		if grep -q "developer_name" "${appdata}" ; then

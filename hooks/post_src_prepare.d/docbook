@@ -6,6 +6,10 @@
 
 function extract_xml_doctype() {
 	local xml doctype
+
+	# virtual/* ebuilds
+	[ ! -d "${S}" ] && exit
+
 	touch "${T}"/portage-bashrc-doctype
 
 	while IFS= read -r -d '' xml
